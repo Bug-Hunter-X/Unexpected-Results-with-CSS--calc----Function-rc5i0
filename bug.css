@@ -1,0 +1,15 @@
+The CSS property `calc()` is used to perform calculations. However, it can sometimes lead to unexpected results if the units are not consistent or if the calculations are too complex. For example, the following code will produce unexpected results because the units are mixed:
+
+```css
+width: calc(50% + 10px);
+```
+
+In this case, the browser will try to add a percentage to a pixel value, which can lead to unpredictable results. To avoid this issue, it's important to use consistent units within the `calc()` function. For example, the following code is better:
+
+```css
+width: calc(50% + 10vw);
+```
+
+Another common mistake is to use too many nested calculations. This can make the code difficult to read and maintain, and it can also lead to unexpected results.  Avoid overly complex calculations within the `calc()` function.
+
+Also, be careful about the order of operations; parenthesis can be helpful.
