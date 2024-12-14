@@ -1,0 +1,3 @@
+# Unexpected Results with CSS `calc()` Function
+
+This repository demonstrates some uncommon errors that can occur when using the `calc()` function in CSS.  The `calc()` function is powerful but requires careful attention to detail to avoid unexpected layout issues.  The `bug.css` file contains examples of problematic code, while `bugSolution.css` provides corrected versions.  This example highlights the importance of unit consistency and avoiding overly complex calculations within `calc()`.
