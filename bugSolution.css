@@ -1,0 +1,19 @@
+The solution to the `calc()` issues lies in ensuring consistent units and simplifying the calculations.
+
+Here's how to correct the problematic code:
+
+**Instead of:**
+```css
+width: calc(50% + 10px); /* Inconsistent Units */
+width: calc(100px + 50% - 20px + 1em); /* Overly Complex */
+```
+
+**Use:**
+```css
+width: calc(50% + 10vw); /* Consistent Units (vw) */
+width: calc((100px + 50%) - 20px + 1em); /* Add Parenthesis for Clarity */
+/* Or simplify the expression if possible */
+width: calc(80px + 50% + 1em);
+```
+
+Remember to always double-check your units and keep your calculations concise and readable for easier debugging and maintenance.
